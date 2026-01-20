@@ -1,468 +1,845 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!--5
-  -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
       Travel with Himesh Prabhakar — Curated Trips & Holiday Packages
     </title>
-    <meta
-      name="description"
-      content="Plan unforgettable holidays with Travel with Himesh Prabhakar. Handpicked packages to Bali, Maldives, Europe, India & more. Transparent pricing, trusted partners, 24×7 support."
-    />
-    <meta name="theme-color" content="#0ea5e9" />
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Travel with Himesh Prabhakar — Curated Trips & Holiday Packages"
-    />
-    <meta
-      property="og:description"
-      content="Handpicked packages, trusted local experts, and seamless bookings."
-    />
-    <meta
-      property="og:image"
-      content="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
-    />
-    <meta property="og:url" content="https://example.com/" />
-    <link rel="icon" href="/logo.jpg" type="image/jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "TravelAgency",
-        "name": "Travel with Himesh Prabhakar",
-        "url": "https://musafirhimesh.com/",
-        "logo": "https://fav.farm/%E2%9C%88%EF%B8%8F",
-        "sameAs": ["https://instagram.com/", "https://facebook.com/"],
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            "telephone": "+91-9368782277",
-            "contactType": "customer service",
-            "areaServed": "IN"
-          }
-        ]
-      }
-    </script>
   </head>
   <body>
-    <!-- Header / Nav -->
-    <header class="site">
-      <div class="container nav" id="nav">
-        <a
-          class="logo"
-          href="#home"
-          aria-label="Travel with Himesh Prabhakar home"
-        >
-          <img src="logo.jpg" alt="logo" id="logo" />
-          <span>Travel with Himesh Prabhakar</span>
-        </a>
-        <nav aria-label="Primary">
-          <button
-            class="btn outline mobile-toggle"
-            aria-controls="menu"
-            aria-expanded="false"
-            onclick="toggleMenu()"
-          >
-            Menu
-          </button>
-          <ul id="menu">
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#packages">Packages</a></li>
-            <li><a href="#why-us">Why Us</a></li>
-            <li><a href="#hacks">Travel Hacks</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero" id="home" role="banner" aria-label="Hero">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container">
-        <div>
-          <span class="badge">Trusted by 1,000+ happy travelers</span>
-          <h1>
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 fw-semibold"
+          href="/"
+        >
+          <img
+            src="img/logo.png"
+            alt="Logo"
+            width="40"
+            class="d-inline-block align-text-top"
+          />
+          Travel with Himesh Prabhakar
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whyus">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#travelhacks">Travel Hacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="hero-bg">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5"
+      >
+        <div class="left d-flex flex-column gap-2">
+          <span
+            class="bg-primary py-1 px-2 text-white fw-bold rounded-5 align-self-start"
+            >Trusted by 1,000+ happy travelers</span
+          >
+          <h1 class="text-white display-2 fw-bold">
             Discover your next
-            <em style="color: var(--accent); font-style: normal"
-              >unforgettable</em
-            >
-            journey.
+            <span class="text-warning">unforgettable</span> journey.
           </h1>
-          <p class="lead">
-            Personalized itineraries, handpicked stays, and 24×7 support. From
+          <p class="text-white fs-4">
+            Personalized itineraries, handpicked stays, and 24x7 support. From
             weekend escapes to luxury honeymoons—travel made effortless.
           </p>
-          <div class="cta">
-            <a href="#packages" class="btn">Explore Packages</a>
-            <a href="https://wa.me/919368782277" class="btn outline"
-              >Chat on WhatsApp</a
+          <div class="buttons d-flex flex-wrap gap-2">
+            <a href="#packages" class="btn btn-primary fw-bold fs-5 rounded-5">
+              Explore Packages
+            </a>
+            <a
+              href="https://wa.me/919368782277"
+              target="_blank"
+              class="btn fs-5 text-success border-success border-4 bg-white fw-bold rounded-5"
+            >
+              Chat on Whatsapp
+            </a>
+          </div>
+        </div>
+        <div class="right bg-white p-sm-5 rounded-5">
+          <div class="d-flex gap-2 flex-wrap mb-3 flex-column flex-sm-row">
+            <select name="" id="" class="p-1">
+              <option value="" selected disabled>Destination</option>
+              <option value="">Goa</option>
+              <option value="">Kashmir</option>
+              <option value="">Bali</option>
+              <option value="">Maldives</option>
+              <option value="">Paris</option>
+              <option value="">Swiss Alps</option>
+            </select>
+            <select name="" id="" class="p-1">
+              <option value="" selected disabled>Duration</option>
+              <option value="">3-4 days</option>
+              <option value="">5-7 days</option>
+              <option value="">8-12 days</option>
+            </select>
+            <select name="" id="" class="p-1">
+              <option value="" selected disabled>Budget</option>
+              <option value="">Under ₹40K</option>
+              <option value="">₹40K - ₹80k</option>
+              <option value="">₹80K+</option>
+            </select>
+            <a class="btn btn-primary fw-bold rounded-5" href="#packages">
+              Find Trips
+            </a>
+          </div>
+          <p class="d-flex gap-2 m-0">
+            Popular:
+            <span class="border border-secondary-subtle px-2 rounded-5"
+              >Bali</span
+            ><span class="border border-secondary-subtle px-2 rounded-5"
+              >Maldives</span
+            ><span class="border border-secondary-subtle px-2 rounded-5"
+              >Kashmir</span
+            ><span class="border border-secondary-subtle px-2 rounded-5"
+              >Paris</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Destinations -->
+    <div class="container my-5" id="destinations">
+      <h1>Top Destinations</h1>
+      <p class="fs-5">A peek into our most loved places right now.</p>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 position-relative mb-4">
+          <img src="img/bali.jpg" alt="" class="w-100" />
+          <p class="dest-p">Bali, Indonesia</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 position-relative mb-4">
+          <img src="img/maldives.jpg" alt="" class="w-100" />
+          <p class="dest-p">Maldives</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 position-relative mb-4">
+          <img src="img/paris.jpg" alt="" class="w-100" />
+          <p class="dest-p">Paris, France</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 position-relative mb-4">
+          <img src="img/kashmir.jpg" alt="" class="w-100" />
+          <p class="dest-p">Kashmir, India</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 position-relative mb-4">
+          <img src="img/goa.jpg" alt="" class="w-100" />
+          <p class="dest-p">Goa, India</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 position-relative mb-4">
+          <img src="img/swiss-alps.jpg" alt="" class="w-100" />
+          <p class="dest-p">Swiss Alps</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Packages -->
+    <div class="container my-5" id="packages">
+      <h1>Featured Packages</h1>
+      <p class="fs-5">
+        Transparent pricing with flights, stays, transfers & curated
+        experiences.
+      </p>
+      <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card shadow border-0">
+            <img src="img/bali-1.jpg" class="card-img-top" alt="bali" />
+            <div class="card-body">
+              <h5
+                class="card-title d-flex justify-content-between align-items-center"
+              >
+                Bali Bliss (6N7D)
+                <span class="fs-6 bg-primary text-white rounded-5 py-1 px-2"
+                  >7 Days</span
+                >
+              </h5>
+              <p class="card-text">
+                Romantic villas + waterfalls + island day trip. Perfect for
+                couples.
+              </p>
+              <p class="d-flex flex-wrap gap-1">
+                <span class="border rounded-5 px-2">4★ Hotels</span>
+                <span class="border rounded-5 px-2">Breakfast</span>
+                <span class="border rounded-5 px-2">Private Transfers</span>
+                <span class="border rounded-5 px-2">Nusa Penida Tour</span>
+              </p>
+              <p class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold fs-4">₹59,999</span
+                ><a href="#contactus" class="btn btn-info fw-bold rounded-5"
+                  >Enquire</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0">
+            <img src="img/maldives-1.jpg" class="card-img-top" alt="maldives" />
+            <div class="card-body">
+              <h5
+                class="card-title d-flex justify-content-between align-items-center"
+              >
+                Maldives Escape (4N5D)<span
+                  class="fs-6 bg-primary text-white rounded-5 py-1 px-2"
+                  >5 Days</span
+                >
+              </h5>
+              <p class="card-text">
+                Turquoise lagoons and lazy luxury. Honeymooner favorite.
+              </p>
+              <p class="d-flex flex-wrap gap-1">
+                <span class="border rounded-5 px-2">OW Villa Option</span>
+                <span class="border rounded-5 px-2">Half Board</span>
+                <span class="border rounded-5 px-2">Speedboat Transfer</span>
+              </p>
+              <p class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold fs-4">₹1,09,999</span
+                ><a href="#contactus" class="btn btn-info fw-bold rounded-5"
+                  >Enquire</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0">
+            <img src="img/kashmir-1.jpg" class="card-img-top" alt="kashmir" />
+            <div class="card-body">
+              <h5
+                class="card-title d-flex justify-content-between align-items-center"
+              >
+                Kashmir Spring (5N6D)<span
+                  class="fs-6 bg-primary text-white rounded-5 py-1 px-2"
+                  >6 Days</span
+                >
+              </h5>
+              <p class="card-text">
+                Valley blooms, shikara rides, and snow-capped serenity.
+              </p>
+              <p class="d-flex flex-wrap gap-1">
+                <span class="border rounded-5 px-2">Houseboat</span>
+                <span class="border rounded-5 px-2">Breakfast & Dinner</span>
+                <span class="border rounded-5 px-2"
+                  >Gulmarg & Pahalgam Tours</span
+                >
+              </p>
+              <p class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold fs-4">₹34,999</span
+                ><a href="#contactus" class="btn btn-info fw-bold rounded-5"
+                  >Enquire</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0">
+            <img src="img/paris-1.jpg" class="card-img-top" alt="paris" />
+            <div class="card-body">
+              <h5
+                class="card-title d-flex justify-content-between align-items-center"
+              >
+                Paris & Beyond (7N8D)<span
+                  class="fs-6 bg-primary text-white rounded-5 py-1 px-2"
+                  >8 Days</span
+                >
+              </h5>
+              <p class="card-text">
+                Classic Europe starter with art, cafes, and countryside jaunts.
+              </p>
+              <p class="d-flex flex-wrap gap-1">
+                <span class="border rounded-5 px-2">City Pass</span>
+                <span class="border rounded-5 px-2">Louvre Entry</span>
+                <span class="border rounded-5 px-2">Seine Cruise</span>
+              </p>
+              <p class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold fs-4">₹1,29,999</span
+                ><a href="#contactus" class="btn btn-info fw-bold rounded-5"
+                  >Enquire</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0">
+            <img src="img/goa-1.jpg" class="card-img-top" alt="goa" />
+            <div class="card-body">
+              <h5
+                class="card-title d-flex justify-content-between align-items-center"
+              >
+                Goa Weekend (3N4D)<span
+                  class="fs-6 bg-primary text-white rounded-5 py-1 px-2"
+                  >4 Days</span
+                >
+              </h5>
+              <p class="card-text">
+                Beachy breather with flea markets, forts, and seafood trails.
+              </p>
+              <p class="d-flex flex-wrap gap-1">
+                <span class="border rounded-5 px-2">3★ Resort</span>
+                <span class="border rounded-5 px-2">Breakfast</span>
+                <span class="border rounded-5 px-2">Airport Transfers</span>
+              </p>
+              <p class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold fs-4">₹14,999</span
+                ><a href="#contactus" class="btn btn-info fw-bold rounded-5"
+                  >Enquire</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0">
+            <img
+              src="img/swiss-alps-1.jpg"
+              class="card-img-top"
+              alt="swiss-alps"
+            />
+            <div class="card-body">
+              <h5
+                class="card-title d-flex justify-content-between align-items-center"
+              >
+                Swiss Alps Trails (6N7D)<span
+                  class="fs-6 bg-primary text-white rounded-5 py-1 px-2"
+                  >7 Days</span
+                >
+              </h5>
+              <p class="card-text">
+                Postcard vistas, lakes, and trains that run like clockwork.
+              </p>
+              <p class="d-flex flex-wrap gap-1">
+                <span class="border rounded-5 px-2">Swiss Pass</span>
+                <span class="border rounded-5 px-2">Mountain Excursions</span>
+                <span class="border rounded-5 px-2">Breakfast</span>
+              </p>
+              <p class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold fs-4">₹1,59,999</span
+                ><a href="#contactus" class="btn btn-info fw-bold rounded-5"
+                  >Enquire</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Features -->
+    <div class="bg-body-tertiary py-5" id="whyus">
+      <div class="container py-5">
+        <h1 class="mb-5">Why Us</h1>
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <h5 class="card-title d-flex gap-2">
+                  <i class="bi bi-check2-circle text-success"></i>Handpicked
+                  Stays
+                </h5>
+                <p class="card-text">
+                  We partner with stays that deliver character, comfort, and
+                  service.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <h5 class="card-title d-flex gap-2">
+                  <i class="bi bi-currency-rupee text-success"></i>Clear, Fair
+                  Prices
+                </h5>
+                <p class="card-text">
+                  No hidden costs. All inclusions listed upfront with GST
+                  invoices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <h5 class="card-title d-flex gap-2">
+                  <i class="bi bi-clock text-success"></i>Always-On Support
+                </h5>
+                <p class="card-text">
+                  From airport pickup to last-day drop, we're one WhatsApp away.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Testimonial -->
+    <div class="container py-5">
+      <h1>Happy Travelers</h1>
+      <div class="testimonial-slider">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner py-5 text-center">
+            <div class="carousel-item active">
+              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+              <figure class="text-cent col-md-6 offset-md-3 mt-4">
+                <blockquote class="blockquote">
+                  <p>
+                    “Kashmir in spring with curated local guides—<br />felt
+                    safe, serene, special.”
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-2">
+                  Rohit (Kashmir, 2024)
+                </figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+              <figure class="col-md-6 offset-md-3 mt-4">
+                <blockquote class="blockquote">
+                  <p>
+                    “From hotels and drivers to the tiny details—everything was
+                    perfect.<br />We'll book again!”
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-2">
+                  Aarti & Nikhil (Ooty, 2025)
+                </figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+              <figure class="col-md-6 offset-md-3 mt-4">
+                <blockquote class="blockquote">
+                  <p>
+                    “Bali honeymoon was dreamy. Private pool villa, island hops,
+                    the works.<br />Thank you!”
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-2">
+                  Simran & Karan (Bali, 2025)
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Travel Hacks and Guides -->
+    <div class="container my-5" id="travelhacks">
+      <h1 class="mb-4">Travel Hacks and Guides</h1>
+      <div class="card-group gap-5">
+        <div class="card border-0 shadow">
+          <img src="img/bali-2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Top Bali Travel Hacks</h5>
+            <p class="card-text">
+              Skip crowds at Gates of Heaven, best SIMs, trusted money changers,
+              and island-hopping tips.
+            </p>
+            <a
+              class="btn btn-outline-info fw-bolder rounded-5"
+              href="https://thebalisun.com/balis-best-travel-hacks-save-time-and-money-for-first-time-visitors/"
+              target="_blank"
+              >Read</a
             >
           </div>
         </div>
-        <div class="card" aria-label="Quick search" style="padding: 18px">
-          <form
-            class="search"
-            onsubmit="event.preventDefault();scrollToId('packages')"
-            aria-label="search-packages"
+        <div class="card border-0 shadow">
+          <img src="img/maldives-2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Maldives on Any Budget</h5>
+            <p class="card-text">
+              Resort vs local island stays, transfer choices, and meal plans
+              explained simply.
+            </p>
+            <a
+              class="btn btn-outline-info fw-bolder rounded-5"
+              href="https://www.nomadicmatt.com/travel-blogs/maldives-budget-travel/"
+              target="_blank"
+              >Read</a
+            >
+          </div>
+        </div>
+        <div class="card border-0 shadow">
+          <img src="img/paris-2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Europe Visa & Schengen Basics</h5>
+            <p class="card-text">
+              Entry rules, biometrics, and how to plan multi-country routes with
+              ease.
+            </p>
+            <a
+              class="btn btn-outline-info fw-bolder rounded-5"
+              href="https://timesofindia.indiatimes.com/life-style/travel/things-to-do/what-it-really-takes-to-get-a-schengen-visa-the-first-time-a-first-hand-account/articleshow/126687477.cms"
+              target="_blank"
+              >Read</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Trip Moments -->
+    <div class="container my-5">
+      <h1 class="mb-4">Trip Moments</h1>
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/bali-3.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/bali-4.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/goa-3.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/goa-4.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/kashmir-3.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/kashmir-4.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/maldives-3.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/maldives-4.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/paris-3.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="img/paris-4.jpg" class="w-100 rounded-3 shadow" alt="" />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img
+            src="img/swiss-alps-3.jpg"
+            class="w-100 rounded-3 shadow"
+            alt=""
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img
+            src="img/swiss-alps-4.jpg"
+            class="w-100 rounded-3 shadow"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- FAQS -->
+    <div class="container my-5">
+      <h1 class="mb-4">FAQS</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              What's included in the package price?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
           >
+            <div class="accordion-body">
+              Standard inclusions: flights (if mentioned), stay, breakfast,
+              airport transfers, and listed tours. Exclusions are clearly stated
+              in each package.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Can I customize an itinerary?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Absolutely. Share your dates, budget, and preferences—we'll tailor
+              it and send options within hours.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              How do payments work?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Secure online link (Razorpay/UPI). Pay in milestones—booking
+              advance, pre-departure balance.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Contact Us -->
+    <div
+      class="container my-5 py-5 d-flex flex-lg-row flex-column gap-5"
+      id="contactus"
+    >
+      <div class="left">
+        <h1>Get a free quote</h1>
+        <form class="row g-3" id="quote-form">
+          <div class="col-md-6">
+            <label for="inputName" class="form-label">Name</label>
             <input
               type="text"
-              id="q"
-              placeholder="Search destination (e.g., Bali, Goa, Europe)"
-              aria-label="Search"
+              class="form-control"
+              id="inputName"
+              name="name"
+              required
             />
-            <select id="days" aria-label="Trip duration">
-              <option value="">Duration</option>
-              <option value="3-4">3–4 days</option>
-              <option value="5-7">5–7 days</option>
-              <option value="8-12">8–12 days</option>
-            </select>
-            <select id="budget" aria-label="Budget per person">
-              <option value="">Budget</option>
-              <option value="under-40k">Under ₹40k</option>
-              <option value="40-80k">₹40k–₹80k</option>
-              <option value="80k+">₹80k+</option>
-            </select>
-            <button class="btn" type="submit">Find Trips</button>
-          </form>
-          <p class="small" style="margin: 10px 6px 0">
-            Popular: <span class="chip">Bali</span>
-            <span class="chip">Maldives</span>
-            <span class="chip">Kashmir</span> <span class="chip">Paris</span>
-          </p>
-        </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPhone" class="form-label">Phone Number</label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputPhone"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              name="email"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputTravellers" class="form-label">Travellers</label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputTravellers"
+              name="travellers"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity1" class="form-label">Origin</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity1"
+              name="origin"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity2" class="form-label">Destination</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity2"
+              name="destination"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputDate" class="form-label">Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="inputDate"
+              name="date"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputNotes" class="form-label">Notes</label>
+            <textarea
+              class="form-control"
+              id="inputNotes"
+              rows="3"
+              placeholder="Interested in: Swiss Alps Trails (6N7D)"
+              name="notes"
+              required
+            ></textarea>
+          </div>
+          <!-- Anti-spam honeypot -->
+          <input type="text" name="company" style="display: none" />
+          <div class="col-12 d-flex flex-wrap gap-3">
+            <button type="submit" class="btn btn-outline-primary fw-bold rounded-5 border-3">Request Quote</button>
+            <a
+              href="https://wa.me/919368782277"
+              target="_blank"
+              class="btn btn-outline-success fw-bold rounded-5 border-3"
+              >Whatsapp Us</a
+            >
+          </div>
+        </form>
+        <br />
+        <div id="alert-box" class="alert d-none mt-3" role="alert"></div>
       </div>
-    </section>
-
-    <!-- Destinations -->
-    <section class="section destinations" id="destinations">
-      <div class="container">
-        <h2 class="title">Top Destinations</h2>
-        <p class="lead">A peek into our most loved places right now.</p>
-        <div class="grid grid-3" id="destGrid">
-          <!-- Destination cards injected by JS -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Packages -->
-    <section class="section" id="packages">
-      <div class="container">
-        <h2 class="title">Featured Packages</h2>
-        <p class="lead">
-          Transparent pricing with flights, stays, transfers & curated
-          experiences.
+      <div class="right d-flex flex-column">
+        <h3>Visit Us</h3>
+        <p class="fs-5">
+          Near Deputy Ganj Post Office, Bulandshahr, Uttar Pradesh, 2030001
         </p>
-        <div class="grid grid-3" id="pkgGrid">
-          <!-- Packages injected by JS -->
-        </div>
+        <iframe
+          class="shadow"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d877.3479828248749!2d77.85886205014614!3d28.40742839257168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ca1042a93af2f%3A0x7a44efaaf535632c!2sPost%20office!5e0!3m2!1sen!2sus!4v1768845495607!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p class="d-flex flex-wrap gap-3 mt-4">
+          <a
+            class="text-black border rounded-5 text-decoration-none px-2 py-1 d-flex align-items-center gap-2 bg-primary-subtle"
+            href="tel:+919368782277"
+            ><i class="bi bi-telephone-fill"></i>+91 9368782277</a
+          ><a
+            class="text-black border rounded-5 text-decoration-none px-2 py-1 d-flex align-items-center gap-2 bg-success-subtle"
+            href="mailto:hm@musafirhimesh.com"
+            target="_blank"
+            ><i class="bi bi-envelope-fill"></i>hm@musafirhimesh.com</a
+          ><a
+            class="text-black border rounded-5 text-decoration-none px-2 py-1 d-flex align-items-center gap-2 bg-danger-subtle"
+            href="https://www.instagram.com/musafir_himesh/"
+            target="_blank"
+            ><i class="bi bi-instagram"></i>Instagram</a
+          >
+        </p>
       </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="section why" id="why-us">
-      <div class="container grid grid-3">
-        <div class="card" style="padding: 22px">
-          <div class="point">
-            <i>✓</i>
-            <div>
-              <h3>Handpicked Stays</h3>
-              <p class="lead">
-                We partner with stays that deliver character, comfort, and
-                service.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="padding: 22px">
-          <div class="point">
-            <i>₹</i>
-            <div>
-              <h3>Clear, Fair Prices</h3>
-              <p class="lead">
-                No hidden costs. All inclusions listed upfront with GST
-                invoices.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="padding: 22px">
-          <div class="point">
-            <i>24×7</i>
-            <div>
-              <h3>Always-On Support</h3>
-              <p class="lead">
-                From airport pickup to last-day drop, we’re one WhatsApp away.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Slider -->
-    <section class="section" id="testimonials">
-      <div class="container slider">
-        <h2 class="title">Happy Travelers</h2>
-        <div class="card" style="padding: 22px">
-          <figure class="slide active">
-            <blockquote>
-              “From hotels and drivers to the tiny details—everything was
-              perfect. We’ll book again!”
-            </blockquote>
-            <figcaption>— Aarti & Nikhil (Ooty, 2025)</figcaption>
-          </figure>
-          <figure class="slide">
-            <blockquote>
-              “Bali honeymoon was dreamy. Private pool villa, island hops, the
-              works. Thank you!”
-            </blockquote>
-            <figcaption>— Simran & Karan (Bali, 2025)</figcaption>
-          </figure>
-          <figure class="slide">
-            <blockquote>
-              “Kashmir in spring with curated local guides—felt safe, serene,
-              special.”
-            </blockquote>
-            <figcaption>— Rohit (Kashmir, 2024)</figcaption>
-          </figure>
-          <div style="display: flex; gap: 10px; margin-top: 14px">
-            <button
-              class="btn outline"
-              onclick="prevSlide()"
-              aria-label="Previous testimonial"
-            >
-              ◀
-            </button>
-            <button
-              class="btn"
-              onclick="nextSlide()"
-              aria-label="Next testimonial"
-            >
-              ▶
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Travel Hacks / Blog preview -->
-    <section class="section" id="hacks">
-      <div class="container">
-        <h2 class="title">Travel Hacks & Guides</h2>
-        <div class="grid grid-3">
-          <article class="card" style="overflow: hidden">
-            <img
-              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop"
-              alt="Bali cliffs and ocean"
-            />
-            <div style="padding: 18px">
-              <h3>Top Bali Travel Hacks</h3>
-              <p class="lead">
-                Skip crowds at Gates of Heaven, best SIMs, trusted money
-                changers, and island-hopping tips.
-              </p>
-              <a class="btn outline" href="#" aria-label="Read Bali hacks"
-                >Read</a
-              >
-            </div>
-          </article>
-          <article class="card" style="overflow: hidden">
-            <img
-              src="https://images.unsplash.com/photo-1500534314210-9b6d0f9e1e0b?q=80&w=1200&auto=format&fit=crop"
-              alt="Maldives overwater villas"
-            />
-            <div style="padding: 18px">
-              <h3>Maldives on Any Budget</h3>
-              <p class="lead">
-                Resort vs local island stays, transfer choices, and meal plans
-                explained simply.
-              </p>
-              <a class="btn outline" href="#" aria-label="Read Maldives tips"
-                >Read</a
-              >
-            </div>
-          </article>
-          <article class="card" style="overflow: hidden">
-            <img
-              src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1200&auto=format&fit=crop"
-              alt="Paris city view"
-            />
-            <div style="padding: 18px">
-              <h3>Europe Visa & Schengen Basics</h3>
-              <p class="lead">
-                Entry rules, biometrics, and how to plan multi-country routes
-                with ease.
-              </p>
-              <a class="btn outline" href="#" aria-label="Read Schengen basics"
-                >Read</a
-              >
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="section" id="gallery">
-      <div class="container">
-        <h2 class="title">Trip Moments</h2>
-        <div class="grid gallery" id="galleryGrid"></div>
-      </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="section" id="faqs">
-      <div class="container">
-        <h2 class="title">FAQs</h2>
-        <details>
-          <summary>What’s included in the package price?</summary>
-          <p>
-            Standard inclusions: flights (if mentioned), stay, breakfast,
-            airport transfers, and listed tours. Exclusions are clearly stated
-            in each package.
-          </p>
-        </details>
-        <details>
-          <summary>Can I customize an itinerary?</summary>
-          <p>
-            Absolutely. Share your dates, budget, and preferences—we’ll tailor
-            it and send options within hours.
-          </p>
-        </details>
-        <details>
-          <summary>How do payments work?</summary>
-          <p>
-            Secure online link (Razorpay/UPI). Pay in milestones—booking
-            advance, pre-departure balance.
-          </p>
-        </details>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container grid grid-2">
-        <div class="card" style="padding: 22px">
-          <h2 class="title">Get a Free Quote</h2>
-          /
-          <form onsubmit="submitForm(event)">
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px">
-              <div class="field">
-                <label for="name">Name</label><input id="name" required />
-              </div>
-              <div class="field">
-                <label for="phone">Phone/WhatsApp</label
-                ><input id="phone" required />
-              </div>
-              <div class="field">
-                <label for="email">Email</label
-                ><input id="email" type="email" />
-              </div>
-              <div class="field">
-                <label for="people">Travellers</label
-                ><input id="people" type="number" min="1" value="2" />
-              </div>
-              <div class="field">
-                <label for="from">From City</label
-                ><input id="from" placeholder="Delhi, Mumbai, ..." />
-              </div>
-              <div class="field">
-                <label for="destination">Destination</label
-                ><input
-                  id="destination"
-                  placeholder="Bali, Maldives, ..."
-                  required
-                />
-              </div>
-              <div class="field" style="grid-column: 1/3">
-                <label for="dates">Dates</label
-                ><input id="dates" placeholder="e.g., 15–22 Oct" />
-              </div>
-              <div class="field" style="grid-column: 1/3">
-                <label for="notes">Notes</label
-                ><textarea
-                  id="notes"
-                  rows="4"
-                  placeholder="Budget range, hotel type, highlights..."
-                ></textarea>
-              </div>
-            </div>
-            <div style="display: flex; gap: 12px; margin-top: 12px">
-              <button class="btn" type="submit">Request Quote</button>
-              <a
-                class="btn outline"
-                href="https://wa.me/910000000000?text=Hi%20I%20want%20a%20trip%20quote"
-                target="_blank"
-                rel="noreferrer"
-                >WhatsApp Us</a
-              >
-            </div>
-            <p
-              id="formStatus"
-              class="small"
-              role="status"
-              aria-live="polite"
-              style="margin-top: 10px"
-            ></p>
-          </form>
-        </div>
-        <div class="card" style="padding: 22px">
-          <h3>Visit Us</h3>
-          <p class="lead">
-            Near Deputy Ganj Post Office, Bulandshahr, Uttar Pradesh, 2030001
-          </p>
-          <iframe
-            class="map"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537363153166!3d-37.81627944202105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzE0LjMiRQ!5e0!3m2!1sen!2sin!4v1689250000000"
-          ></iframe>
-          <div style="display: flex; gap: 12px; margin-top: 12px">
-            <a href="tel:+91 93687 82277" class="chip">📞 +91 94587 82277</a>
-            <a href="mailto:hm@musafirhimeh.com" class="chip"
-              >✉️ info@musafirhimesh.com</a
-            >
-            <a href="#" class="chip">📷 Instagram</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-            flex-wrap: wrap;
-          "
-        >
-          <p>
-            © <span id="year"></span> Travel with Himesh Prabhakar • All rights
-            reserved
-          </p>
-          <p class="small">
-            Made with ❤ for wanderers. <a href="#faqs">FAQs</a> •
-            <a href="#">Privacy</a> • <a href="#">Terms</a>
-          </p>
-        </div>
+    </div>
+    <!--  -->
+    <br />
+    <footer class="bg-black text-white py-5">
+      <div class="container d-flex justify-content-center align-items-center">
+        <p class="m-0 fs-5">
+          <i class="bi bi-c-circle"></i>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Travel with Himesh Prabhakar <i class="bi bi-dot"></i> All Rights
+          Reserved.
+        </p>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
+    <script>
+      (function () {
+        emailjs.init("--3KDKAyic54hYhvb");
+      })();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
