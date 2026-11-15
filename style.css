@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+  font-family: "Inter", sans-serif;
+}
+.hero-bg {
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("img/hero-bg.jpg") center center/cover;
+  padding: 250px 0;
+}
+.dest-p {
+  background: #fff;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  padding: 2.5px 10px;
+  border-radius: 10px;
+}
+.testimonial-slider .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: #dc3545;
+  border-radius: 100%;
+}
+.testimonial-slider {
+  padding: 10px 0px 40px;
+}
+@media (max-width: 575px) {
+    .hero-bg .right{
+        padding: 15px 10px;
+        font-size: 14px;
+        border-radius: 10px !important;
+    }
+}
+@media (min-width: 992px) {
+    iframe{
+        width: 500px;
+        height: 400px;
+    }
+ }
