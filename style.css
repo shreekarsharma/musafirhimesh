@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
   font-family: "Inter", sans-serif;
+}
+.nav-link {
+  color: white !important;
 }
 .hero-bg {
   background:
     linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("img/hero-bg.jpg") center center/cover;
-  padding: 250px 0;
+  padding: 0 0 250px 0;
 }
 .dest-p {
   background: #fff;
@@ -27,15 +30,36 @@ body{
   padding: 10px 0px 40px;
 }
 @media (max-width: 575px) {
-    .hero-bg .right{
-        padding: 15px 10px;
-        font-size: 14px;
-        border-radius: 10px !important;
-    }
+  .hero-bg .right {
+    padding: 15px 10px;
+    font-size: 14px;
+    border-radius: 10px !important;
+  }
 }
 @media (min-width: 992px) {
-    iframe{
-        width: 500px;
-        height: 400px;
-    }
- }
+  iframe {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+.hero-navbar {
+  background: transparent !important;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 100px;
+}
+.hero-navbar .navbar-brand,
+.hero-navbar .nav-link {
+  color: #fff;
+}
+.hero-navbar .nav-link:hover,
+.hero-navbar .nav-link:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+.hero-navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.65);
+}
+.hero-navbar .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
